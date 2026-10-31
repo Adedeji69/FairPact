@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import logo from "../assets/logo.png";
 import "../styles/Homepage.css";
 import shield from "../assets/hero-content-shield.png";
 import truck from "../assets/hero-content-shield2.png";
