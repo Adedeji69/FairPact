@@ -1,10 +1,9 @@
-
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
-import logo from "../assets/Logo.png";
+import logo from "../assets/logo.png";
 import "../styles/Nav.css";
 
 function NavScrollExample() {
