@@ -1,0 +1,506 @@
+.fairpact-navbar {
+  width: 100%;
+  height: 70px;
+  padding: 8px 0;
+  background-color: #ffffff !important;
+  border-bottom: 1px solid #f0f0ed;
+  font-family: "Inter", sans-serif;
+  z-index: 1000;
+}
+
+.navbar-container {
+  max-width: 1440px;
+  padding-left: 5.2%;
+  padding-right: 5.2%;
+}
+
+.navbar-brand-custom {
+  margin-left: -70px !important;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.navbar-logo {
+  display: block;
+  width: 150px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: clamp(12px, 1.5vw, 24px);
+  margin-left: 60px !important;
+  margin-right: auto;
+}
+
+
+.fairpact-navbar .navbar-links .nav-link {
+  color: #343b3a;
+  font-size: 16px;
+  font-weight: 500;
+  white-space: nowrap;
+  padding: 8px 0;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  font-weight: 500;
+  color: #adadaf;
+}
+
+.fairpact-navbar .navbar-links .nav-link:hover {
+  color: #0f6e56;
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-left: 120px;
+  padding-left: 25px;
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-left: 0;
+  padding-left: 20px;
+  flex-shrink: 0;
+}
+
+.navbar-login:hover {
+  color: #0a4e3d;
+}
+
+.navbar-create-btn {
+  background-color: #d85a30 !important;
+  border: 1px solid #d85a30 !important;
+  color: #ffffff !important;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 11px 20px;
+  border-radius: 11px;
+  white-space: nowrap;
+  box-shadow: none !important;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+  height: 45px;
+}
+
+.navbar-create-btn:hover {
+  background-color: #bd4824 !important;
+  border-color: #bd4824 !important;
+  transform: translateY(-1.5px);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#how-it-works,
+#buyer-protection,
+#seller-protection,
+#logistics-providers,
+#faq,
+#create-account {
+  scroll-margin-top: 90px;
+}
+
+
+
+
+
+
+.fairpact-navbar {
+  width: 100%;
+  height: 70px;
+  padding: 8px 0;
+  background-color: #ffffff !important;
+  border-bottom: 1px solid #f0f0ed;
+  font-family: "Inter", sans-serif;
+  z-index: 1000;
+}
+
+.navbar-container {
+  max-width: 1440px;
+  padding-left: 5.2%;
+  padding-right: 5.2%;
+}
+
+.navbar-brand-custom {
+  display: flex;
+  align-items: center;
+  margin-left: -65px;
+  padding: 0;
+}
+
+.navbar-logo {
+  display: block;
+  width: 150px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin-left: 100px;
+  margin-right: 350px;
+}
+
+.fairpact-navbar .navbar-links .nav-link {
+  color: #adadaf;
+  font-size: 16px;
+  font-weight: 500;
+  white-space: nowrap;
+  padding: 8px 0;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.fairpact-navbar .navbar-links .nav-link:hover {
+  color: #0f6e56;
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-left: 120px;
+  padding-left: 25px;
+}
+
+.navbar-login {
+  color: #0f6e56;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.navbar-login:hover {
+  color: #0a4e3d;
+}
+
+.navbar-create-btn {
+  background-color: #d85a30 !important;
+  border: 1px solid #d85a30 !important;
+  color: #ffffff !important;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 11px 20px;
+  border-radius: 11px;
+  white-space: nowrap;
+  box-shadow: none !important;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  height: 45px;
+}
+
+.navbar-create-btn:hover {
+  background-color: #bd4824 !important;
+  border-color: #bd4824 !important;
+  transform: translateY(-1.5px);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#how-it-works,
+#buyer-protection,
+#seller-protection,
+#logistics-providers,
+#faq,
+#create-account {
+  scroll-margin-top: 90px;
+}
+
+
+
+@media (max-width: 1030px) {
+  .navbar-container{
+    padding: 5px 24px !important;
+
+  }
+
+  .navbar-brand-custom img{
+    width: 120px;
+    height: auto;
+    margin-left: 60px;
+  }
+
+  .navbar-links{
+    /* width: 20px !important; */
+    margin-left: 5px ;
+    display: flex !important;
+    gap: 2px !important;
+  }
+  .nav-link{
+    font-size: 15px !important;
+  }
+
+  .navbar-actions{
+    margin-left: -320px;
+    gap: 10px !important;
+  }
+  .navbar-login{
+    font-size: 15px !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar-container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .navbar-brand-custom {
+    margin-left: 0;
+  }
+
+  .navbar-logo {
+    width: 125px;
+    height: 55px;
+  }
+
+  .navbar-links {
+    margin-left: 25px;
+    margin-right: 0;
+    gap: 14px;
+  }
+
+  .fairpact-navbar .navbar-links .nav-link {
+    font-size: 12px;
+  }
+
+  .navbar-actions {
+    margin-left: auto;
+    padding-left: 18px;
+    gap: 160px;
+  }
+
+  .navbar-login {
+    font-size: 13px;
+  }
+
+  .navbar-create-btn {
+    padding: 10px 14px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .fairpact-navbar {
+    height: auto;
+    min-height: 68px;
+    padding: 8px 0;
+    position: relative;
+    background: #ffffff !important;
+  }
+
+  .navbar-container {
+    padding-left: 24px;
+    padding-right: 24px;
+
+  }
+
+  .navbar-brand-custom {
+    margin-left: -40px;
+    margin-right: auto;
+  }
+
+  .navbar-logo {
+    width: 135px;
+    height: 50px;
+  }
+
+  /* Hamburger button */
+  .fairpact-navbar .navbar-toggler {
+    border: 1px solid #e4e3dc;
+    border-radius: 8px;
+    padding: 7px 10px;
+    box-shadow: none;
+  }
+
+  .fairpact-navbar .navbar-toggler:focus {
+    box-shadow: 0 0 0 3px rgb(15 110 86 / 12%);
+  }
+
+  /* Expanded mobile menu */
+  .fairpact-navbar .navbar-collapse {
+    flex-basis: 100%;
+    padding: 16px 0 8px;
+    border-top: 1px solid #f0f0ed;
+    margin-top: 8px;
+  }
+
+  .navbar-links {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    width: 100%;
+    margin: 0;
+  }
+
+  .fairpact-navbar .navbar-links .nav-link {
+    display: block;
+    padding: 13px 4px;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #343b3a;
+    white-space: normal;
+    border-bottom: 1px solid #f3f3f0;
+  }
+
+  .fairpact-navbar .navbar-links .nav-link:hover {
+    color: #0f6e56;
+  }
+
+  .navbar-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+    width: 100%;
+    margin: 0;
+    padding: 18px 0 8px;
+  }
+
+  .navbar-login {
+    display: inline-block;
+    padding: 8px 4px;
+    font-size: 14px;
+  }
+
+  .navbar-create-btn {
+    width: 100%;
+    min-height: 45px;
+    height: auto;
+    padding: 12px 18px;
+    font-size: 14px;
+    border-radius: 9px;
+  }
+}
+
+
+@media (min-width: 481px) and (max-width: 767.98px) {
+  .navbar-container {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  .navbar-logo {
+    width: 130px;
+  }
+  .navbar-brand-custom {
+    margin-left: -40px;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 430px) {
+  .navbar-brand-custom {
+    margin-left: -70px;
+    margin-right: auto;
+  }
+}
+/* =====================================
+   STANDARD PHONES
+   376px – 480px
+===================================== */
+@media (min-width: 376px) and (max-width: 480px) {
+  .fairpact-navbar {
+    min-height: 64px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+
+  .navbar-container {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .navbar-logo {
+    width: 120px;
+    height: 46px;
+  }
+
+  .fairpact-navbar .navbar-collapse {
+    padding-top: 12px;
+  }
+}
+
+/* =====================================
+   SMALL PHONES
+   320px – 375px
+===================================== */
+@media (max-width: 375px) {
+  .fairpact-navbar {
+    min-height: 60px;
+  }
+
+  .navbar-container {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .navbar-logo {
+    width: 112px;
+    height: 44px;
+  }
+
+  .fairpact-navbar .navbar-toggler {
+    padding: 6px 8px;
+  }
+
+  .fairpact-navbar .navbar-collapse {
+    padding-top: 10px;
+  }
+
+  .fairpact-navbar .navbar-links .nav-link {
+    font-size: 13px;
+    padding: 12px 3px;
+  }
+
+  .navbar-actions {
+    gap: 10px;
+  }
+
+  .navbar-create-btn {
+    font-size: 13px;
+  }
+}
+
+/* =====================================
+   EXTRA-WIDE DESKTOPS
+   1440px and above
+===================================== */
+@media (min-width: 1440px) {
+  .navbar-container {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  .navbar-brand-custom {
+    margin-left: 0;
+  }
+
+  .navbar-links {
+    margin-left: auto;
+    margin-right: auto;
+    gap: clamp(18px, 2vw, 30px);
+  }
+
+  .navbar-actions {
+    margin-left: 0;
+    padding-left: 24px;
+  }
+}
+
+
+
