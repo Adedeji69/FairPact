@@ -1,0 +1,249 @@
+
+.delivery-status-card {
+  width: 320px;
+  min-height: 250px;
+  box-sizing: border-box;
+  padding: 26px 10px;
+
+  background: rgba(255, 255, 255, 0.98);
+  border: 1px solid #e4e3dc;
+  border-radius: 24px;
+  box-shadow: 0 14px 35px rgba(28, 31, 38, 0.10);
+
+  color: #1c1f26;
+  font-family: "Inter", sans-serif;
+}
+
+
+.delivery-status-title {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.delivery-status-title .material-symbols-outlined {
+  color: #0f6e56;
+  font-size: 28px;
+}
+
+.delivery-status-title h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+}
+
+.delivery-progress {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 34px;
+}
+
+.delivery-progress-line {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  right: 12px;
+  height: 3px;
+  border-radius: 5px;
+  background: #e1e5e3;
+}
+
+.delivery-progress-filled {
+  width: 50%;
+  height: 100%;
+  border-radius: 5px;
+  background: #0f6e56;
+}
+
+.delivery-step {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  min-width: 0;
+  text-align: center;
+}
+
+.delivery-step-marker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  box-sizing: border-box;
+  border: 2px solid #d9dfdc;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.delivery-step.completed .delivery-step-marker {
+  border-color: #0f6e56;
+  background: #0f6e56;
+  color: #fff;
+}
+
+.delivery-step.completed .delivery-step-marker .material-symbols-outlined {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.delivery-step.active .delivery-step-marker {
+  border: 3px solid #0f6e56;
+  box-shadow: 0 0 0 5px #e1f3ed;
+}
+
+.delivery-active-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #0f6e56;
+}
+
+.delivery-step-info {
+  margin-top: 15px;
+  width: 100%;
+}
+
+.delivery-step-label {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.delivery-step.active .delivery-step-label {
+  color: #0f6e56;
+  font-weight: 700;
+}
+
+.delivery-step-time {
+  display: block;
+  margin-top: 7px;
+  color: #777c80;
+  font-size: 11px;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+.delivery-step.active .delivery-step-time {
+  color: #0f6e56;
+}
+
+.estimated-delivery {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 25px;
+  padding-top: 19px;
+  border-top: 1px solid #eeede8;
+}
+
+.estimated-delivery > .material-symbols-outlined {
+  color: #687780;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+.estimated-delivery p {
+  margin: 0;
+  color: #687780;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.estimated-delivery strong {
+  color: #0f6e56;
+  font-weight: 700;
+}
+
+@media (max-width: 1030px) {
+  .delivery-status-card {
+    width: 300px;
+    padding: 10px 14px;
+    position: absolute;
+    left: 32px;
+    top: 240px;
+    
+  }
+}
+
+@media (max-width: 920px) {
+  .delivery-status-card {
+    width: 300px;
+    position: absolute;
+    left: 80px;
+    top: 243px;
+  }
+ 
+
+}
+
+
+@media (max-width: 882px) {
+  .delivery-status-card {
+    width: 300px;
+    position: absolute;
+    left: 60px;
+    top: 283px;
+  }
+ 
+
+}
+
+@media (max-width: 768px) {
+  .delivery-status-card {
+    width: 380px;
+    padding: 18px 14px;
+    position: absolute;
+    left: 220px;
+    top: 240px;
+  }
+}
+
+@media (max-width: 480px) {
+  .delivery-status-card {
+    width: 100%;
+    padding: 16px 12px;
+    border-radius: 18px;
+  }
+
+  .delivery-status-title h3 {
+    font-size: 15px;
+  }
+
+  .delivery-step-label {
+    font-size: 11px;
+  }
+
+  .delivery-step-time {
+    font-size: 9px;
+    white-space: normal;
+  }
+
+  .estimated-delivery p {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 360px) {
+  .delivery-status-card {
+    width: 185px;
+    padding: 14px 10px;
+  }
+
+  .delivery-status-title h3 {
+    font-size: 14px;
+  }
+
+  @media (max-width: 330px) {
+    .delivery-status-card {
+    width: 100%;
+    padding: 16px 12px;
+    border-radius: 18px;
+  }
+  }
+}
