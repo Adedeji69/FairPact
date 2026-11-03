@@ -228,7 +228,6 @@
     font-size: 11px;
   }
 }
-
 @media (max-width: 360px) {
   .delivery-status-card {
     width: 185px;

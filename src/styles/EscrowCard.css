@@ -281,14 +281,14 @@
 }
 
 
+
 @media (max-width: 480px) {
+
   .escrow-card {
     width: 110% !important;
-    min-height: 340px;
-    padding: 16px 18px;
-    border-radius: 18px;
     margin-left: 200px;
   }
+
   .product-details p{
     font-size: 10px;
   }
@@ -306,6 +306,8 @@
     height: 52px;
   }
 }
+
+
 
 @media (max-width: 360px) {
   .escrow-card {

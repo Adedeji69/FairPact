@@ -54,12 +54,14 @@ function NavScrollExample() {
           </Nav>
 
           <div className="navbar-actions">
-            <Link to="/login" className="navbar-login">
+            <Link to="/signin" className="navbar-login">
               Log in
             </Link>
 
             <Button className="navbar-create-btn" >
+              <Link to="signup" className="navSignup">
               Create an Account
+              </Link>
             </Button>
           </div>
         </Navbar.Collapse>
