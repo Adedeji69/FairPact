@@ -71,6 +71,7 @@
 
 .navbar-login:hover {
   color: #0a4e3d;
+  transform: translateY(-1.5px);
 }
 
 .navbar-create-btn {
@@ -87,6 +88,11 @@
     background-color 0.2s ease,
     transform 0.2s ease;
   height: 45px;
+}
+
+.navSignup{
+  color: #ffffff !important;
+  text-decoration: none;
 }
 
 .navbar-create-btn:hover {
@@ -220,7 +226,10 @@ html {
 
 
 
-@media (max-width: 1030px) {
+@media (max-width: 1034px) {
+  .fairpact-navbar{
+    height: 65px;
+  }
   .navbar-container{
     padding: 5px 24px !important;
 
@@ -234,7 +243,7 @@ html {
 
   .navbar-links{
     /* width: 20px !important; */
-    margin-left: 5px ;
+    margin-left: 10px !important;
     display: flex !important;
     gap: 2px !important;
   }
@@ -252,9 +261,16 @@ html {
 }
 
 @media (max-width: 992px) {
+  .fairpact-navbar{
+    height: 50px;
+  }
   .navbar-container {
     padding-left: 24px;
     padding-right: 24px;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    /* margin-top: -45px !important; */
+    /* height: 10px !important; */
   }
 
   .navbar-brand-custom {
@@ -344,6 +360,8 @@ html {
     gap: 0;
     width: 100%;
     margin: 0;
+    margin-left: -1px  !important;
+
   }
 
   .fairpact-navbar .navbar-links .nav-link {
