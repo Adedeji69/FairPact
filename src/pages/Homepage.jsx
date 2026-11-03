@@ -50,13 +50,17 @@ const Homepage = () => {
             </p>
 
             <div className="hero-buttons">
-              <button>Create an Account →</button>
+              <button>
+                <Link to='/signup' className="heroSignup">
+                  Create an Account →
+                </Link>
+              </button>
               <a href="#how-it-works">How it works</a>
             </div>
           </div>
 
           <div className="hero-features">
-            <div className="hero-feature">
+            <div className="hero-feature secure">
               <img src={shield} alt="Secure payments" />
 
               <div>
@@ -290,7 +294,9 @@ const Homepage = () => {
           </p>
 
           <button className="logistic-btn">
-            Become a Logistics Provider <span>→</span>
+            <Link to="/logistic/signup" className="heroSignup">
+              Become a Logistics Provider <span>→</span>
+            </Link>
           </button>
         </div>
 
@@ -358,9 +364,13 @@ const Homepage = () => {
         </div>
 
         <div className="banner-action">
-          <button>Create your account →</button>
+          <button>
+            <Link to="/signup" className="heroSignup">
+              Create your account →
+            </Link>
+          </button>
           <span>
-            Already have an account? <Link to="/login">Log in</Link>
+            Already have an account? <Link to="/login" className="logIn">Log in</Link>
           </span>
         </div>
       </section>
