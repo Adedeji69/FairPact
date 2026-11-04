@@ -2,10 +2,13 @@
   width: 100%;
   height: 70px;
   padding: 8px 0;
-  background-color: #ffffff !important;
-  border-bottom: 1px solid #f0f0ed;
+
   font-family: "Inter", sans-serif;
   z-index: 1000;
+}
+.navbar.fairpact-navbar {
+  background-color: #e8e8e6 !important;
+ border-bottom: 1px solid #cececb;
 }
 
 .navbar-container {
