@@ -3,11 +3,7 @@ import "../styles/UserSignUp.css"
 
 const UserSignUp = () => {
   return (
-    <div className='page'>
-
-        <div className="card">
-
-        </div>
+    <div>
       
     </div>
   )
