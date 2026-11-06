@@ -59,7 +59,7 @@ function NavScrollExample() {
             </Link>
 
             <Button className="navbar-create-btn" >
-              <Link to="/signup/user" className="navSignup">
+              <Link to="/signup" className="navSignup">
               Create an Account
               </Link>
             </Button>
