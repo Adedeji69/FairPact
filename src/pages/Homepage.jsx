@@ -51,7 +51,7 @@ const Homepage = () => {
 
             <div className="hero-buttons">
               <button>
-                <Link to='/signup/user' className="heroSignup">
+                <Link to='/signup' className="heroSignup">
                   Create an Account →
                 </Link>
               </button>
@@ -365,7 +365,7 @@ const Homepage = () => {
 
         <div className="banner-action">
           <button>
-            <Link to="/signup/user" className="heroSignup">
+            <Link to="/signup" className="heroSignup">
               Create your account →
             </Link>
           </button>
