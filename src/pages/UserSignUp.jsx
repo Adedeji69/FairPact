@@ -1,12 +1,14 @@
 import React from 'react'
-import "../styles/userSignUp.css"
+import "../styles/UserSignUp.css"
 
 const UserSignUp = () => {
   return (
     <div className='page'>
-      <div className="card">
-        
-      </div>
+
+        <div className="card">
+
+        </div>
+      
     </div>
   )
 }
