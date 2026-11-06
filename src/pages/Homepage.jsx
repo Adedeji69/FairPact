@@ -36,7 +36,7 @@ const Homepage = () => {
         <div className="hero-left">
           <div className="hero-content">
             <span className="hero-eyebrow">
-              ESCROW · LOGISTICS · DISPUTE RESOLUTION
+              ESCROW · DELIVERY · DISPUTE RESOLUTION
             </span>
 
             <h1>
@@ -45,13 +45,13 @@ const Homepage = () => {
 
             <p>
               FairPact protects buyers and sellers with secure escrow payments,
-              trusted logistics and a fair dispute resolution process. Shop and
+              trusted delivery providers and a fair dispute resolution process. Shop and
               sell with confidence.
             </p>
 
             <div className="hero-buttons">
               <button>
-                <Link to='/signup' className="heroSignup">
+                <Link to='/signup/user' className="heroSignup">
                   Create an Account →
                 </Link>
               </button>
@@ -74,7 +74,7 @@ const Homepage = () => {
 
               <div>
                 <h4>Tracked Delivery</h4>
-                <p>Real-time logistics updates</p>
+                <p>Real-time delivery updates</p>
               </div>
             </div>
 
@@ -167,12 +167,12 @@ const Homepage = () => {
             <div className="process-text">
               <h3>3. Ship</h3>
               <p>
-                Seller ships and logistics <br /> handles the delivery.
+                Seller ships and delivery partners <br /> handles the delivery.
               </p>
 
               <p className="process-duplicate">
                 {" "}
-                Seller ships and logistics <br /> handles the delivery.{" "}
+                Seller ships and delivery partners <br /> handles the delivery.{" "}
               </p>
             </div>
           </div>
@@ -285,17 +285,17 @@ const Homepage = () => {
 
       <section className="logistics" id="logistics-providers">
         <div className="logistic-content">
-          <span className="section-label">INTEGRATED LOGISTICS</span>
+          <span className="section-label">INTEGRATED DELIVERY</span>
           <h2>Reliable delivery, every time.</h2>
 
           <p>
-            FairPact connects you with trusted individual riders and logistics
-            companies to move your items safely across cities and states.
+            FairPact connects you with trusted individual riders and delivery 
+            partners to move your items safely across cities and states.
           </p>
 
           <button className="logistic-btn">
-            <Link to="/logistic/signup" className="heroSignup">
-              Become a Logistics Provider <span>→</span>
+            <Link to="/signup/deliverypartners" className="heroSignup">
+              Become a Delivery Partner <span>→</span>
             </Link>
           </button>
         </div>
@@ -316,7 +316,7 @@ const Homepage = () => {
               delivery_truck_speed
             </span>
             <div>
-              <h4>Logistics Companies</h4>
+              <h4>Delivery Partners</h4>
               <p>Scale for bigger orders</p>
             </div>
           </div>
@@ -365,12 +365,12 @@ const Homepage = () => {
 
         <div className="banner-action">
           <button>
-            <Link to="/signup" className="heroSignup">
+            <Link to="/signup/user" className="heroSignup">
               Create your account →
             </Link>
           </button>
           <span>
-            Already have an account? <Link to="/login" className="logIn">Log in</Link>
+            Already have an account? <Link to="/signin" className="logIn">Sign In</Link>
           </span>
         </div>
       </section>
@@ -390,7 +390,7 @@ const Homepage = () => {
             </li>
             <li onClick={() => scrollToSection("logistics-providers")}>
               {" "}
-              For Logistics Providers{" "}
+              For Delivery Providers{" "}
             </li>
             <li> FAQ </li>
           </ul>
