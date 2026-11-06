@@ -45,7 +45,7 @@ function NavScrollExample() {
             </Nav.Link>
 
             <Nav.Link onClick={() => scrollToSection("logistics-providers")}>
-              For Logistics Providers
+              For Delivery Providers
             </Nav.Link>
 
             <Nav.Link onClick={() => scrollToSection("faq")}>
@@ -55,11 +55,11 @@ function NavScrollExample() {
 
           <div className="navbar-actions">
             <Link to="/signin" className="navbar-login">
-              Log in
+              Sign In
             </Link>
 
             <Button className="navbar-create-btn" >
-              <Link to="signup" className="navSignup">
+              <Link to="/signup/user" className="navSignup">
               Create an Account
               </Link>
             </Button>
