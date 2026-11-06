@@ -1,0 +1,9 @@
+.page{
+    background-color: red;
+}
+
+.card{
+    border: 1px solid black;
+    width: 60%;
+    height: 50vh;
+}
