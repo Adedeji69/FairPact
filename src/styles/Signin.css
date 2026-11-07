@@ -158,6 +158,24 @@
     border-radius: 5px;
     border: 1px solid #EBEAE5;
 }
+.passwordWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.passwordWrapper input {
+    width: 100%;
+}
+
+.eyeIcon {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    color: #838382;
+    display: flex;
+    align-items: center;
+}
 .remember {
     display: flex;
     justify-content: space-between;
@@ -169,11 +187,18 @@
     padding: 0;
     font-size: 14px;
 }
+.remember p:hover{
+    transform: translateY(-1px);
+    color: #0F5948;
+}
 
 .rememberInputs {
     display: flex;
     align-items: center;
     gap: 5px;
+}
+.rememberInputs input[type="checkbox"] {
+    accent-color: #0F5948;
 }
 
 .signinBtn{
@@ -186,10 +211,16 @@
     border: none;
     background-color: #db5a30;
 }
+.signinBtn:hover{
+    transform: translateY(-2px);
+}
 .signinBottom{
     font-size: 14px;
     color: #838382;
     margin-top: 15px;
+}
+.signinBottom a:hover{
+    transform: translateY(-1px);
 }
 
 
