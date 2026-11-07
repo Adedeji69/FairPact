@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/Signin.css";
 import logo from "../assets/logo.png";
 import shield from "../assets/hero-content-shield.png";
 
 const Signin = () => {
+  const [showPassword, setShowPassword] = useState(false);
+
   return (
     <div className="signinPage">
       <div className="box">
@@ -54,7 +56,7 @@ const Signin = () => {
             <div className="feat">
               <div className="icon">
                 <span
-                  class="material-symbols-outlined"
+                  className="material-symbols-outlined"
                   style={{ color: "#0f6e56", fontSize: "35px" }}
                 >
                   balance
@@ -73,13 +75,10 @@ const Signin = () => {
           </div>
         </div>
         <div className="right">
-          
-
           <div className="signinBox">
-
             <div className="mobileLogo">
-            <img src={logo} alt="logo" />
-          </div>
+              <img src={logo} alt="logo" />
+            </div>
 
             <div className="welcomeText">
               <h4>Welcome Back</h4>
@@ -94,14 +93,29 @@ const Signin = () => {
 
               <div className="inputsField">
                 <label htmlFor="password">Password</label>
-                <input type="password" placeholder="Enter Your Password" />
+                <div className="passwordWrapper">
+                  <input
+                    type={showPassword ? "text" : "password"}
+                    placeholder="Enter Your Password"
+                  />
+                  <span
+                    className="eyeIcon"
+                    onClick={() => setShowPassword(!showPassword)}
+                  >
+                    <span className="material-symbols-outlined" style={{fontSize: '16px'}}>
+                      {showPassword ? "visibility_off" : "visibility"}
+                    </span>
+                  </span>
+                </div>
               </div>
             </div>
 
             <div className="remember">
               <div className="rememberInputs">
                 <input type="checkbox" name="rememberUser" id="rememberUser" />
-                <label htmlFor="rememberUser" style={{fontSize: '14px'}}>Remember me</label>
+                <label htmlFor="rememberUser" style={{ fontSize: "14px" }}>
+                  Remember me
+                </label>
               </div>
 
               <p>Forgot password?</p>
@@ -113,7 +127,7 @@ const Signin = () => {
               Don't have an account?{" "}
               <Link
                 to="/signup"
-                style={{ textDecoration: "none", color: "#0F5948" }}
+                style={{ textDecoration: "none", color: "#0F5948", display: 'inline-block', transition: 'transform 0.2s ease' }}
               >
                 Sign Up
               </Link>
