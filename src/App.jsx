@@ -1,14 +1,22 @@
-import { useState } from 'react'
+import { Routes, Route } from 'react-router-dom'
 import './App.css'
 import Homepage from './pages/Homepage'
+import DeliverySignUp from './pages/DeliverySignUp'
+import Signin from './pages/Signin'
+import AdminSignUp from './pages/AdminSignUp'
+import UserSignUp from './pages/UserSignUp'
+
+
 
 function App() {
-
-
   return (
-    <>
-      <Homepage/>
-    </>
+    <Routes>
+      <Route path='/' element={<Homepage />}/>
+      <Route path='/signup/admin' element={<AdminSignUp/>}/>
+      <Route path='/signup' element={<UserSignUp/>}/>
+      <Route path='/signup/delivery' element={<DeliverySignUp />} />
+      <Route path='/signin' element={<Signin/>}/>
+    </Routes>
   )
 }
 

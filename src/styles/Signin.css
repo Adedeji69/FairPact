@@ -1,0 +1,428 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+.signinPage{
+    background-color: #efefed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    border-radius: 10px;
+    width: 60%;
+    height: 75vh;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.left{  
+  width: 40%;
+  height: 75vh;
+  padding: 10px 20px;
+  background-color: white;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.fairpactLogo img{
+    width: 150px;
+    padding: 10px;
+}
+.leftTop{
+    margin-top: 20px;
+}
+.leftTop span{
+    color: #0F5948;
+}
+.leftTop h2{
+    font-weight: 600;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+}
+.leftTop p{
+    color: #838382;
+    padding: 5px 0;
+}
+
+.leftMiddle{
+    /* width: 100%; */
+    height: 32vh;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.feat{
+    border: 2px solid #EBEAE5;
+    width: 100%;
+    height: 100px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 0 20px;
+}
+.feat .icon{
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: #dfe9e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon img{
+    width: 45px;
+    height: 45px;
+}
+
+.featText h5{
+    font-size: 15px;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+}
+.featText p{
+    font-size: 12px;
+    color: #838382;
+    margin: 0;
+    padding: 5px 0 0 0;
+}
+.leftBottom{
+    margin-top: 110px;
+}
+
+.leftBottom h5{
+    font-size: 10px;
+    font-weight: 900;
+    color: #0F5948;
+    font-family: cursive;
+}
+.right{
+    width: 60%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mobileLogo {
+    display: none;
+}
+
+.mobileLogo img {
+    width: 150px;
+}
+.signinBox{
+    width: 500px;
+    height: 355px;
+    border: 2px solid #EBEAE5;
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.welcomeText h4{
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+}
+.welcomeText p{
+    color: #838382;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+    padding-top: 5px;
+}
+.signinInputs{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+.inputsField{
+    display: flex;
+    flex-direction: column;
+}
+.inputsField input{
+    padding: 10px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #EBEAE5;
+}
+.remember {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+.remember p{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+.rememberInputs {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.signinBtn{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    margin-top: 15px;
+    font-weight: 700;
+    border: none;
+    background-color: #db5a30;
+}
+.signinBottom{
+    font-size: 14px;
+    color: #838382;
+    margin-top: 15px;
+}
+
+
+@media (min-width: 1440px) {
+    .box {
+        width: 50%;
+    }
+
+    .signinBox {
+        width: 420px;
+    }
+}
+
+
+@media (max-width: 1439px) {
+    .box {
+        width: 65%;
+    }
+}
+
+
+@media (max-width: 1199px) {
+    .box {
+        width: 75%;
+    }
+
+    .leftTop h2 {
+        font-size: 24px;
+    }
+
+    .signinBox {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1023px) {
+    .box {
+        width: 90%;
+    }
+
+    .left {
+        width: 45%;
+    }
+
+    .right {
+        width: 55%;
+    }
+
+    .leftTop h2 {
+        font-size: 20px;
+    }
+
+    .feat {
+        height: 85px;
+        padding: 0 10px;
+    }
+
+    .leftBottom {
+        margin-top: 60px;
+    }
+
+    .signinBox {
+        width: 95%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .signinPage {
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .box {
+        width: 100%;
+        height: 100vh;
+        border-radius: 0;
+        box-shadow: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left {
+        display: none;
+    }
+
+    .right {
+        width: 100%;
+        /* max-width: 500px; */
+        margin: 0 auto;
+        border-radius: 10px;
+        padding: 20px;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mobileLogo {
+        display: block;
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .signinBox {
+        width: 100%;
+        height: 430px;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+}
+
+@media (max-width: 600px) {
+    .signinPage {
+        padding: 15px;
+    }
+
+    .right {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .signinBox {
+        padding: 20px;
+    }
+
+    .welcomeText h4 {
+        font-size: 20px;
+    }
+
+    .signinBtn {
+        height: 45px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .signinPage {
+        padding: 10px;
+        align-items: flex-start;
+        padding-top: 30px;
+    }
+
+    .signinBox {
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    .welcomeText h4 {
+        font-size: 18px;
+    }
+
+    .welcomeText p {
+        font-size: 13px;
+    }
+
+    .inputsField input {
+        height: 44px;
+        font-size: 14px;
+    }
+
+    .signinBtn {
+        height: 44px;
+        font-size: 14px;
+        border-radius: 8px;
+    }
+
+    .signinBottom {
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 375px) {
+    .signinPage {
+        padding: 8px;
+        padding-top: 20px;
+    }
+
+    .signinBox {
+        padding: 12px;
+    }
+
+    .welcomeText h4 {
+        font-size: 16px;
+    }
+
+    .welcomeText p {
+        font-size: 12px;
+    }
+
+    .inputsField label {
+        font-size: 13px;
+    }
+
+    .inputsField input {
+        height: 40px;
+        font-size: 13px;
+    }
+
+    .remember label,
+    .remember span {
+        font-size: 12px;
+    }
+
+    .signinBtn {
+        height: 42px;
+        font-size: 13px;
+    }
+
+    .signinBottom {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 321px) {
+    .signinBox {
+        padding: 10px;
+        height: 385px;
+    }
+
+    .welcomeText h4 {
+        font-size: 15px;
+    }
+
+    .inputsField input {
+        height: 38px;
+        font-size: 12px;
+    }
+
+    .signinBtn {
+        height: 40px;
+        font-size: 12px;
+    }
+}
