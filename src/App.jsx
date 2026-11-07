@@ -1,11 +1,11 @@
 import { Routes, Route } from 'react-router-dom'
 import './App.css'
 import Homepage from './pages/Homepage'
-
 import DeliverySignUp from './pages/DeliverySignUp'
 import Signin from './pages/Signin'
-import AdminSignUp from './pages/adminSignUp'
-import UserSignUp from './pages/userSignUp'
+import AdminSignUp from './pages/AdminSignUp'
+import UserSignUp from './pages/UserSignUp'
+
 
 
 function App() {
