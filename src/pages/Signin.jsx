@@ -32,7 +32,7 @@ const Signin = () => {
               </div>
 
               <div className="featText">
-                <h5>Escrow protection</h5>
+                <h5>Escrow Protection</h5>
                 <p>Your money is held safely until delivery is confirmed.</p>
               </div>
             </div>
@@ -132,6 +132,7 @@ const Signin = () => {
                 Sign Up
               </Link>
             </p>
+            
           </div>
         </div>
       </div>
