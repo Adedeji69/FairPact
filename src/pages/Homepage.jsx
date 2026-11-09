@@ -294,7 +294,7 @@ const Homepage = () => {
           </p>
 
           <button className="logistic-btn">
-            <Link to="/signup/deliverypartners" className="heroSignup">
+            <Link to="/signup/delivery" className="heroSignup">
               Become a Delivery Partner <span>→</span>
             </Link>
           </button>
