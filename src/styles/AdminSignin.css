@@ -1,0 +1,484 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+.adminSigninPage{
+    background-color: #efefed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.adminSigninBox{
+    border-radius: 10px;
+    width: 60%;
+    height: 75vh;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.adminSigninLeft{
+  width: 40%;
+  height: 75vh;
+  padding: 10px 20px;
+  background-color: white;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.adminSigninLogo img{
+    width: 150px;
+    padding: 10px;
+    margin-left: -20px;
+}
+.adminLabel {
+    display: inline-block;
+    background-color: #FCE9E1;
+    width: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    margin-top: -10px;
+}
+
+.adminSigninLeftTop .adminLabel{
+    font-size: 12px;
+    font-weight: 700;
+    color: #D85A30 !important;
+}
+.adminSigninLeftTop{
+    margin-top: 10px;
+}
+.adminSigninLeftTop span{
+    color: #0F5948;
+}
+.adminSigninLeftTop h2{
+    font-weight: 600;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+}
+.adminSigninLeftTop p{
+    color: #838382;
+    padding: 5px 0;
+}
+
+.adminSigninLeftMiddle{
+    height: 32vh;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.adminSigninFeat{
+    border: 2px solid #EBEAE5;
+    width: 100%;
+    height: 100px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 0 20px;
+}
+.adminSigninFeat .adminSigninIcon{
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: #dfe9e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.adminSigninIcon img{
+    width: 45px;
+    height: 45px;
+}
+
+.adminSigninFeatText h5{
+    font-size: 15px;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+}
+.adminSigninFeatText p{
+    font-size: 12px;
+    color: #838382;
+    margin: 0;
+    padding: 5px 0 0 0;
+}
+.adminSigninLeftBottom{
+    margin-top: 60px;
+}
+
+.adminSigninLeftBottom h5{
+    font-size: 10px;
+    font-weight: 900;
+    color: #0F5948;
+    font-family: cursive;
+}
+
+.adminSigninRight{
+    width: 60%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.adminSigninMobileLogo {
+    display: none;
+}
+
+.adminSigninMobileLogo img {
+    width: 150px;
+}
+.adminSigninCard{
+    width: 500px;
+    height: 375px;
+    border: 2px solid #EBEAE5;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.adminSigninWelcome h4{
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+}
+.adminSigninWelcome p{
+    color: #838382;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+    padding-top: 5px;
+}
+
+.adminSigninCard form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+.adminSigninInputField{
+    display: flex;
+    flex-direction: column;
+}
+.adminSigninInputField input{
+    padding: 10px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #EBEAE5;
+}
+.adminSigninPasswordWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.adminSigninPasswordWrapper input {
+    width: 100%;
+}
+
+.adminSigninEyeIcon {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    color: #838382;
+    display: flex;
+    align-items: center;
+}
+.adminSigninRemember {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+/* "Forgot password?" is a span here (was a p), same look as the original */
+.adminForgotPassword{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    display: inline-block;
+    cursor: pointer;
+}
+.adminForgotPassword:hover{
+    transform: translateY(-1px);
+    color: #0F5948;
+}
+
+.adminSigninRememberInputs {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.adminSigninRememberInputs input[type="checkbox"] {
+    accent-color: #0F5948;
+}
+
+.adminSigninBtn{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    margin-top: 15px;
+    font-weight: 700;
+    border: none;
+    background-color: #db5a30;
+}
+.adminSigninBtn:hover{
+    transform: translateY(-2px);
+}
+.adminSigninBottom{
+    font-size: 14px;
+    color: #838382;
+    margin-top: 15px;
+}
+.adminSigninBottom a {
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+.adminSigninBottom a:hover{
+    transform: translateY(-1px) !important;
+}
+
+
+@media (min-width: 1440px) {
+    .adminSigninBox {
+        width: 50%;
+    }
+
+    .adminSigninCard {
+        width: 420px;
+    }
+}
+
+
+@media (max-width: 1439px) {
+    .adminSigninBox {
+        width: 65%;
+    }
+}
+
+
+@media (max-width: 1199px) {
+    .adminSigninBox {
+        width: 75%;
+    }
+
+    .adminSigninLeftTop h2 {
+        font-size: 24px;
+    }
+
+    .adminSigninCard {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1023px) {
+    .adminSigninBox {
+        width: 90%;
+    }
+
+    .adminSigninLeft {
+        width: 45%;
+    }
+
+    .adminSigninRight {
+        width: 55%;
+    }
+
+    .adminSigninLeftTop h2 {
+        font-size: 20px;
+    }
+
+    .adminSigninFeat {
+        height: 85px;
+        padding: 0 10px;
+    }
+
+    .adminSigninLeftBottom {
+        margin-top: 60px;
+    }
+
+    .adminSigninCard {
+        width: 95%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .adminSigninPage {
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .adminSigninBox {
+        width: 100%;
+        height: 100vh;
+        border-radius: 0;
+        box-shadow: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .adminSigninLeft {
+        display: none;
+    }
+
+    .adminSigninRight {
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 10px;
+        padding: 20px;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .adminSigninMobileLogo {
+        display: block;
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .adminSigninCard {
+        width: 100%;
+        height: 430px;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+}
+
+@media (max-width: 600px) {
+    .adminSigninPage {
+        padding: 15px;
+    }
+
+    .adminSigninRight {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .adminSigninCard {
+        padding: 20px;
+    }
+
+    .adminSigninWelcome h4 {
+        font-size: 20px;
+    }
+
+    .adminSigninBtn {
+        height: 45px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .adminSigninPage {
+        padding: 10px;
+        align-items: flex-start;
+        padding-top: 30px;
+    }
+
+    .adminSigninCard {
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    .adminSigninWelcome h4 {
+        font-size: 18px;
+    }
+
+    .adminSigninWelcome p {
+        font-size: 13px;
+    }
+
+    .adminSigninInputField input {
+        height: 44px;
+        font-size: 14px;
+    }
+
+    .adminSigninBtn {
+        height: 44px;
+        font-size: 14px;
+        border-radius: 8px;
+    }
+
+    .adminSigninBottom {
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 375px) {
+    .adminSigninPage {
+        padding: 8px;
+        padding-top: 20px;
+    }
+
+    .adminSigninCard {
+        padding: 12px;
+    }
+
+    .adminSigninWelcome h4 {
+        font-size: 16px;
+    }
+
+    .adminSigninWelcome p {
+        font-size: 12px;
+    }
+
+    .adminSigninInputField label {
+        font-size: 13px;
+    }
+
+    .adminSigninInputField input {
+        height: 40px;
+        font-size: 13px;
+    }
+
+    .adminSigninRemember label,
+    .adminSigninRemember span {
+        font-size: 12px;
+    }
+
+    .adminSigninBtn {
+        height: 42px;
+        font-size: 13px;
+    }
+
+    .adminSigninBottom {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 321px) {
+    .adminSigninCard {
+        padding: 10px;
+        height: 385px;
+    }
+
+    .adminSigninWelcome h4 {
+        font-size: 15px;
+    }
+
+    .adminSigninInputField input {
+        height: 38px;
+        font-size: 12px;
+    }
+
+    .adminSigninBtn {
+        height: 40px;
+        font-size: 12px;
+    }
+}

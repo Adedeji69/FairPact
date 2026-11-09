@@ -126,7 +126,7 @@
     height: 355px;
     border: 2px solid #EBEAE5;
     border-radius: 10px;
-    background-color: white;
+    /* background-color: white; */
     padding: 20px;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 }
