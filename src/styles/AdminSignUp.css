@@ -1,0 +1,418 @@
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+} */
+
+.adminSignupPage {
+    background-color: #efefed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.adminSignupBox {
+    border-radius: 10px;
+    width: 60%;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.adminSignupLeft {
+    width: 40%;
+    height: 80vh;
+    padding: 10px 20px;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.adminLogo img {
+    width: 150px;
+    padding: 10px;
+}
+
+.adminLeftTop {
+    margin-top: 20px;
+}
+
+.adminLeftTop span {
+    color: #0F5948;
+}
+
+.adminLeftTop h2 {
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.adminLeftTop p {
+    color: #838382;
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+.adminLeftMiddle {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.adminFeat {
+    border: 2px solid #EBEAE5;
+    width: 100%;
+    height: 90px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 0 20px;
+}
+
+.adminIcon {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: #dfe9e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.adminFeatText h5 {
+    font-size: 14px;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+}
+
+.adminFeatText p {
+    font-size: 12px;
+    color: #838382;
+    margin: 0;
+    padding: 5px 0 0 0;
+}
+
+.adminLeftBottom {
+    margin-top: 90px;
+}
+
+.adminLeftBottom h5 {
+    font-size: 10px;
+    font-weight: 900;
+    color: #0F5948;
+    font-family: cursive;
+}
+.adminPortalLabel {
+    display: inline-block;
+    background-color: #FCE9E1;
+    width: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.adminLeftTop .adminPortalLabel{
+    font-size: 12px;
+    font-weight: 700;
+    color: #D85A30;
+}
+
+.adminInvitationBadge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #FCE9E1;
+    color: #D85A30;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 5px 12px;
+    border-radius: 20px;
+    margin: 10px 0;
+}
+
+.adminInvitationBadge .material-symbols-outlined {
+    font-size: 16px;
+}
+
+.adminLeftDesc {
+    color: #838382;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.adminSignupRight {
+    width: 60%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #efefed;
+    overflow-y: auto;
+}
+
+.adminSignupCard {
+    width: 80%;
+    height: 565px;
+    border: 2px solid #EBEAE5;
+    border-radius: 10px;
+    /* background-color: white; */
+    padding: 20px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    overflow-y: auto;
+}
+.adminSignupCard::-webkit-scrollbar {
+    width: 4px;
+}
+
+.adminSignupCard::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.adminSignupCard::-webkit-scrollbar-thumb {
+    background-color: #bdbdba;
+    border-radius: 10px;
+}
+
+.adminMobileLogo {
+    display: none;
+}
+
+.adminMobileLogo img {
+    width: 130px;
+}
+
+.adminSignupText h2 {
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.adminSignupText p {
+    color: #838382;
+    font-size: 14px;
+    margin: 0;
+    padding: 5px 0 10px 0;
+}
+
+.adminFormRow {
+    display: flex;
+    gap: 10px;
+}
+
+.adminInputField {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.adminInputField label {
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.adminInputField input,
+.adminInputField select {
+    padding: 10px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #EBEAE5;
+    width: 100%;
+    background-color: white;
+}
+
+.adminInputField select {
+    cursor: pointer;
+    color: #333;
+}
+
+.adminPasswordWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.adminPasswordWrapper input {
+    width: 100%;
+}
+
+.adminEyeIcon {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    color: #838382;
+    display: flex;
+    align-items: center;
+}
+
+.adminEyeIcon .material-symbols-outlined {
+    font-size: 20px;
+}
+
+.adminSignupBtn {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    margin-top: 5px;
+    font-weight: 700;
+    border: none;
+    background-color: #db5a30;
+    cursor: pointer;
+}
+.adminSignupBtn:hover{
+    transform: translateY(-1px);
+}
+
+.adminSignupBottom {
+    font-size: 12px;
+    color: #838382;
+    margin-top: 15px;
+}
+
+.adminSignupBottom a {
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.adminSignupBottom a:hover {
+    transform: translateY(-1px);
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 1440px) {
+    .adminSignupBox {
+        width: 55%;
+    }
+}
+
+@media (max-width: 1199px) {
+    .adminSignupBox {
+        width: 75%;
+    }
+}
+
+@media (max-width: 1023px) {
+    .adminSignupBox {
+        width: 90%;
+    }
+
+    .adminSignupLeft {
+        width: 45%;
+    }
+
+    .adminSignupRight {
+        width: 55%;
+    }
+
+    .adminFeat {
+        height: 80px;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .adminSignupPage {
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .adminSignupBox {
+        width: 100%;
+        height: 100vh;
+        border-radius: 0;
+        box-shadow: none;
+        justify-content: center;
+        align-items: center;
+        background-color: #efefed;
+    }
+
+    .adminSignupLeft {
+        display: none;
+    }
+
+    .adminSignupRight {
+        width: 100%;
+        height: 100vh;
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0;
+        overflow-y: auto;
+    }
+
+    .adminMobileLogo {
+        display: block;
+        margin: 0 auto 15px;
+    }
+
+    .adminSignupCard {
+        width: 100%;
+        height: auto;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+}
+
+@media (max-width: 480px) {
+    .adminSignupCard {
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    .adminSignupText h2 {
+        font-size: 18px;
+    }
+
+    .adminSignupBtn {
+        height: 44px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 375px) {
+    .adminSignupCard {
+        padding: 12px;
+    }
+
+    .adminSignupText h2 {
+        font-size: 16px;
+    }
+
+    .adminInputField input,
+    .adminInputField select {
+        height: 38px;
+        font-size: 13px;
+    }
+
+    .adminSignupBtn {
+        height: 42px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 320px) {
+    .adminSignupCard {
+        padding: 10px;
+    }
+
+    .adminSignupBtn {
+        height: 40px;
+        font-size: 12px;
+    }
+}
