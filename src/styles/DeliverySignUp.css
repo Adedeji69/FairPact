@@ -1,0 +1,463 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+.deliverySignupPage {
+    background-color: #efefed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.deliverySignupBox {
+    border-radius: 10px;
+    width: 60%;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.deliveryLeft {
+    width: 40%;
+    height: 80vh;
+    padding: 20px;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.deliveryLogo img {
+    width: 150px;
+    padding: 10px;
+    margin-left: -20px;
+}
+
+.deliveryPortalLabel {
+    display: inline-block;
+    background-color: #dfe9e3;
+    color: #0F5948;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin: 10px 0;
+}
+
+.deliveryLeftTop {
+    margin-top: 10px;
+}
+
+.deliveryLeftTop h2 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.3;
+}
+
+.deliveryLeftTop p {
+    color: #838382;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.deliveryLeftMiddle {
+    margin-top: 25px;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.deliveryFeat {
+    border: 2px solid #EBEAE5;
+    width: 100%;
+    height: 100px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    padding: 0 20px;
+}
+
+.deliveryIcon {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #dfe9e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.deliveryFeatText h5 {
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.deliveryFeatText p {
+    font-size: 12px;
+    color: #838382;
+    margin: 0;
+    padding-top: 3px;
+}
+
+.deliveryLeftBottom {
+    margin-top: 65px;
+}
+
+.deliveryLeftBottom h5 {
+    font-size: 10px;
+    font-weight: 900;
+    color: #0F5948;
+    font-family: cursive;
+}
+
+.deliveryRight {
+    width: 60%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #efefed;
+    overflow-y: auto;
+}
+
+.deliveryCard {
+    width: 90%;
+    height: 565px;
+    border: 2px solid #EBEAE5;
+    border-radius: 10px;
+    /* background-color: white; */
+    padding: 20px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    overflow-y: auto;
+}
+
+.deliveryCard::-webkit-scrollbar {
+    width: 4px;
+}
+
+.deliveryCard::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.deliveryCard::-webkit-scrollbar-thumb {
+    background-color: #EBEAE5;
+    border-radius: 10px;
+}
+
+.deliveryMobileLogo {
+    display: none;
+}
+
+.deliveryMobileLogo img {
+    width: 130px;
+}
+
+.deliverySignupText h2 {
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0;
+}
+
+.deliverySignupText p {
+    color: #838382;
+    font-size: 14px;
+    margin: 0;
+    padding: 5px 0 10px 0;
+}
+
+.partnerTypeWrapper {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+.partnerTypeCard {
+    flex: 1;
+    border: 2px solid #EBEAE5;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: border-color 0.2s ease;
+}
+
+.partnerTypeCard.activePartner {
+    border-color: #0F5948;
+    background-color: #f0f7f4;
+}
+
+.partnerTypeTitle {
+    font-size: 13px;
+    font-weight: 700;
+    margin: 0;
+    color: #333;
+}
+
+.partnerTypeDesc {
+    font-size: 11px;
+    color: #838382;
+    margin: 0;
+}
+
+
+.deliveryInputField {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.deliveryInputField label {
+    font-size: 14px;
+    margin-bottom: 4px;
+    font-weight: 500;
+}
+
+.deliveryInputWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.deliveryInputIcon {
+    position: absolute;
+    left: 10px;
+    color: #838382;
+    font-size: 18px !important;
+}
+
+.deliveryInputWrapper input,
+.deliveryInputWrapper select {
+    width: 100%;
+    padding: 10px 10px 10px 38px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #EBEAE5;
+    background-color: white;
+}
+
+.deliveryInputWrapper select {
+    cursor: pointer;
+}
+
+
+.deliveryPhoneWrapper {
+    display: flex;
+    align-items: center;
+    border: 1px solid #EBEAE5;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 40px;
+}
+
+.phonePrefix {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 0 10px;
+    background-color: #f5f5f5;
+    border-right: 1px solid #EBEAE5;
+    height: 100%;
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.deliveryPhoneWrapper input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.deliveryFormRow {
+    display: flex;
+    gap: 10px;
+}
+
+.deliveryPasswordWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.deliveryPasswordWrapper input {
+    width: 100%;
+    padding: 10px 40px 10px 38px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #EBEAE5;
+}
+
+.deliveryEyeIcon {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    color: #838382;
+    display: flex;
+    align-items: center;
+}
+
+.deliveryEyeIcon .material-symbols-outlined {
+    font-size: 20px;
+}
+
+.deliverySignupBtn {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    margin-top: 5px;
+    font-weight: 700;
+    border: none;
+    background-color: #db5a30;
+    cursor: pointer;
+}
+.deliverySignupBtn:hover{
+    transform: translateY(-1px);
+}
+
+.deliverySignupBottom {
+    font-size: 12px;
+    color: #838382;
+    margin-top: 15px;
+}
+
+.deliverySignupBottom a {
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.deliverySignupBottom a:hover {
+    transform: translateY(-1px);
+}
+
+
+
+@media (min-width: 1440px) {
+    .deliverySignupBox {
+        width: 55%;
+    }
+}
+
+@media (max-width: 1199px) {
+    .deliverySignupBox {
+        width: 75%;
+    }
+}
+
+@media (max-width: 1023px) {
+    .deliverySignupBox {
+        width: 90%;
+    }
+
+    .deliveryLeft {
+        width: 45%;
+    }
+
+    .deliveryRight {
+        width: 55%;
+    }
+}
+
+@media (max-width: 768px) {
+    .deliverySignupPage {
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .deliverySignupBox {
+        width: 100%;
+        height: 100vh;
+        border-radius: 0;
+        box-shadow: none;
+        justify-content: center;
+        align-items: center;
+        background-color: #efefed;
+    }
+
+    .deliveryLeft {
+        display: none;
+    }
+
+    .deliveryRight {
+        width: 100%;
+        height: 100vh;
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0;
+        overflow-y: auto;
+    }
+
+    .deliveryMobileLogo {
+        display: block;
+        margin: 0 auto 15px;
+    }
+
+    .deliveryCard {
+        width: 100%;
+        height: auto;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+}
+
+@media (max-width: 480px) {
+    .deliveryCard {
+        padding: 15px;
+    }
+
+    .deliverySignupText h2 {
+        font-size: 18px;
+    }
+
+    .partnerTypeWrapper {
+        flex-direction: column;
+    }
+
+    .deliverySignupBtn {
+        height: 44px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 375px) {
+    .deliveryCard {
+        padding: 12px;
+    }
+
+    .deliverySignupText h2 {
+        font-size: 16px;
+    }
+
+    .deliverySignupBtn {
+        height: 42px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 320px) {
+    .deliveryCard {
+        padding: 10px;
+    }
+
+    .deliverySignupBtn {
+        height: 40px;
+        font-size: 12px;
+    }
+}
