@@ -7,8 +7,11 @@
   z-index: 1000;
 }
 .navbar.fairpact-navbar {
-  background-color: #e8e8e6 !important;
- border-bottom: 1px solid #cececb;
+  background-color: #fff !important;
+  border-bottom: 1px solid #cececb;
+  position: sticky !important;
+  top: 0;
+  z-index: 1000;
 }
 
 .navbar-container {
@@ -116,11 +119,6 @@ html {
 #create-account {
   scroll-margin-top: 90px;
 }
-
-
-
-
-
 
 .fairpact-navbar {
   width: 100%;
@@ -245,7 +243,6 @@ html {
   }
 
   .navbar-links{
-    /* width: 20px !important; */
     margin-left: 10px !important;
     display: flex !important;
     gap: 2px !important;
@@ -272,8 +269,6 @@ html {
     padding-right: 24px;
     padding-top: 0 !important;
     padding-bottom: 0 !important;
-    /* margin-top: -45px !important; */
-    /* height: 10px !important; */
   }
 
   .navbar-brand-custom {
@@ -336,7 +331,6 @@ html {
     height: 50px;
   }
 
-  /* Hamburger button */
   .fairpact-navbar .navbar-toggler {
     border: 1px solid #e4e3dc;
     border-radius: 8px;
@@ -348,7 +342,6 @@ html {
     box-shadow: 0 0 0 3px rgb(15 110 86 / 12%);
   }
 
-  /* Expanded mobile menu */
   .fairpact-navbar .navbar-collapse {
     flex-basis: 100%;
     padding: 16px 0 8px;
@@ -429,10 +422,7 @@ html {
     margin-right: auto;
   }
 }
-/* =====================================
-   STANDARD PHONES
-   376px – 480px
-===================================== */
+
 @media (min-width: 376px) and (max-width: 480px) {
   .fairpact-navbar {
     min-height: 64px;
@@ -456,10 +446,6 @@ html {
   }
 }
 
-/* =====================================
-   SMALL PHONES
-   320px – 375px
-===================================== */
 @media (max-width: 375px) {
   .fairpact-navbar {
     min-height: 60px;
@@ -497,10 +483,7 @@ html {
   }
 }
 
-/* =====================================
-   EXTRA-WIDE DESKTOPS
-   1440px and above
-===================================== */
+
 @media (min-width: 1440px) {
   .navbar-container {
     padding-left: 48px;
