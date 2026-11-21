@@ -288,7 +288,7 @@ const DeliverySignUp = () => {
             <p className="deliverySignupBottom">
               Already have an account?{" "}
               <Link
-                to="/signin"
+                to="/partner/signin"
                 style={{ textDecoration: "none", color: "#0F5948" }}
               >
                 Sign In

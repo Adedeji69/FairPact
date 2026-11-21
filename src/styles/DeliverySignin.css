@@ -1,0 +1,392 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+.delSigninPage {
+    background-color: #efefed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.delSigninBox {
+    border-radius: 10px;
+    width: 60%;
+    height: 75vh;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.delSigninLeft {
+    width: 40%;
+    height: 75vh;
+    padding: 20px 30px;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.delSigninLogo img {
+    width: 150px;
+}
+
+.delSigninLeftTop {
+    margin-top: 30px;
+}
+
+.delSigninLeftTop h2 {
+    font-weight: 700;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.delSigninLeftTop p {
+    color: #838382;
+    padding: 8px 0;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.delSigninLeftMiddle {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.delSigninFeat {
+    border: 1px solid #EBEAE5;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 20px;
+}
+
+.delSigninIcon {
+    width: 45px;
+    height: 45px;
+    border-radius: 8px;
+    background-color: #dfe9e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.delSigninFeatText h5 {
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+.delSigninFeatText p {
+    font-size: 12px;
+    color: #838382;
+    margin: 0;
+    padding-top: 3px;
+}
+
+.delSigninLeftBottom {
+    margin-top: 120px;
+}
+
+.delSigninLeftBottom h5 {
+    font-size: 10px;
+    font-weight: 900;
+    color: #0F5948;
+    font-family: cursive;
+}
+
+.delSigninRight {
+    width: 60%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f8f8;
+}
+
+.delSigninMobileLogo {
+    display: none;
+}
+
+.delSigninMobileLogo img {
+    width: 150px;
+}
+
+.delSigninCard {
+    width: 500px;
+    height: auto;
+    border: 1px solid #EBEAE5;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
+    background-color: white;
+}
+
+.delSigninWelcome h4 {
+    font-weight: 700;
+    font-size: 22px;
+    padding: 0;
+    margin: 0;
+}
+
+.delSigninWelcome p {
+    color: #838382;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+    padding-top: 5px;
+}
+
+.delSigninCard form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.delSigninInputField {
+    display: flex;
+    flex-direction: column;
+}
+
+.delSigninInputField label {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.delSigninInputField input {
+    padding: 10px;
+    height: 42px;
+    border-radius: 5px;
+    border: 1px solid #EBEAE5;
+    font-size: 14px;
+}
+
+.delSigninPasswordWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.delSigninPasswordWrapper input {
+    width: 100%;
+}
+
+.delSigninEyeIcon {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    color: #838382;
+    display: flex;
+    align-items: center;
+}
+
+.delSigninRemember {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delSigninRememberInputs {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.delSigninRememberInputs label {
+    font-size: 14px;
+}
+
+.delSigninRememberInputs input[type="checkbox"] {
+    accent-color: #0F5948;
+}
+
+.delForgotPassword {
+    font-size: 14px;
+    color: #0F5948;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.delForgotPassword:hover {
+    transform: translateY(-1px);
+}
+
+.delSigninBtn {
+    width: 100%;
+    height: 42px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    border: none;
+    background-color: #db5a30;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.delSigninBtn:hover {
+    transform: translateY(-2px);
+}
+
+.delSigninBottom {
+    font-size: 13px;
+    color: #838382;
+    margin-top: 15px;
+}
+
+.delSigninBottom a {
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.delSigninBottom a:hover {
+    transform: translateY(-1px);
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 1440px) {
+    .delSigninBox {
+        width: 50%;
+    }
+}
+
+@media (max-width: 1199px) {
+    .delSigninBox {
+        width: 75%;
+    }
+
+    .delSigninLeftTop h2 {
+        font-size: 24px;
+    }
+
+    .delSigninCard {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1023px) {
+    .delSigninBox {
+        width: 90%;
+    }
+
+    .delSigninLeft {
+        width: 45%;
+    }
+
+    .delSigninRight {
+        width: 55%;
+    }
+
+    .delSigninLeftTop h2 {
+        font-size: 20px;
+    }
+
+    .delSigninCard {
+        width: 95%;
+    }
+}
+
+@media (max-width: 768px) {
+    .delSigninPage {
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .delSigninBox {
+        width: 100%;
+        height: 100vh;
+        border-radius: 0;
+        box-shadow: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .delSigninLeft {
+        display: none;
+    }
+
+    .delSigninRight {
+        width: 100%;
+        height: 100vh;
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0;
+    }
+
+    .delSigninMobileLogo {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .delSigninCard {
+        width: 100%;
+        height: auto;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+}
+
+@media (max-width: 480px) {
+    .delSigninCard {
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    .delSigninWelcome h4 {
+        font-size: 18px;
+    }
+
+    .delSigninBtn {
+        height: 44px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 375px) {
+    .delSigninCard {
+        padding: 15px;
+    }
+
+    .delSigninWelcome h4 {
+        font-size: 16px;
+    }
+
+    .delSigninInputField input {
+        height: 40px;
+        font-size: 13px;
+    }
+
+    .delSigninBtn {
+        height: 42px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 321px) {
+    .delSigninCard {
+        padding: 12px;
+    }
+
+    .delSigninBtn {
+        height: 40px;
+        font-size: 12px;
+    }
+}
