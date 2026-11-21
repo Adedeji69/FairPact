@@ -10,6 +10,7 @@ import UserDashboard from './pages/UserDashboard'
 import Escrows from './pages/Escrows'
 import Transactions from './pages/Transactions'
 import Disputes from './pages/Disputes'
+import DeliverySignin from './pages/DeliverySignin'
 
 
 
@@ -21,6 +22,7 @@ function App() {
       <Route path='/admin/signup' element={<AdminSignUp/>}/>
       <Route path='/signup' element={<SignUp/>}/>
       <Route path='/signup/partner' element={<DeliverySignUp />} />
+      <Route path='/partner/signin' element={<DeliverySignin/>}/>
       <Route path='/admin/signin' element={<AdminSignin/>}/>
       <Route path='/signin' element={<Signin/>}/>
       <Route path='/user/dashboard' element={<UserDashboard/>}/>
