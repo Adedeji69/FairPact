@@ -1,0 +1,43 @@
+.escrowTabsWrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.escrowTitle {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.escrowPills {
+    display: flex;
+    gap: 5px;
+}
+
+.escrowPill {
+    color: #333 !important;
+    background-color: transparent !important;
+    border-radius: 20px !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    padding: 6px 16px !important;
+    cursor: pointer;
+}
+
+.escrowPill.activePill {
+    background-color: #0F5948 !important;
+    color: white !important;
+}
+
+.escrowPill:hover {
+    background-color: #dfe9e3 !important;
+    color: #0F5948 !important;
+}
+
+.escrowPill.activePill:hover {
+    background-color: #0F5948 !important;
+    color: white !important;
+}
+

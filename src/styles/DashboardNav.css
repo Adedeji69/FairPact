@@ -1,0 +1,261 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+.dashNav {
+    background-color: white !important;
+    border-bottom: 1px solid #EBEAE5;
+    padding: 3px 100px !important;
+    min-height: unset !important;
+}
+
+.dashNavContainer {
+    display: flex;
+    align-items: center;
+}
+
+.dashLogo {
+    margin-right: 200px;
+}
+
+.dashLogo img {
+    width: 130px;
+}
+
+.dashNavLinks {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: -40px !important;
+}
+
+.dashNavLink {
+    color: #333 !important;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 16px !important;
+    position: relative;
+    text-decoration: none !important;
+}
+
+.dashNavLink:hover {
+    color: #0F5948 !important;
+}
+
+.dashNavLink.activeLink {
+    color: #0F5948 !important;
+    font-weight: 600;
+}
+
+.dashNavLink.activeLink::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 16px;
+    right: 16px;
+    height: 1px;
+    background-color: #0F5948;
+    border-radius: 2px;
+}
+
+.dashNavRight {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navBell {
+    position: relative;
+    cursor: pointer;
+    margin-top: 13px;
+}
+
+.navBell .material-symbols-outlined {
+    font-size: 26px;
+    color: #333;
+}
+
+.navBell2 {
+    display: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.navBell2 .material-symbols-outlined {
+    font-size: 34px;
+    color: #333;
+}
+
+.bellBadge {
+    position: absolute;
+    top: -9px;
+    right: -12px;
+    background-color: #db5a30;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatarWrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.avatarImg {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #EBEAE5;
+}
+
+.avatarName {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+.avatarChevron {
+    font-size: 20px !important;
+    color: #333;
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+.dropdown-menu {
+    border: 1px solid #EBEAE5;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.dropdown-item {
+    font-size: 14px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: #333;
+}
+
+.dropdown-item:hover {
+    background-color: #f0f7f4;
+    color: #0F5948;
+}
+
+.logoutLink {
+    color: red !important;
+    font-weight: 700 !important;
+}
+
+.mobileAvatar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 0;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1030px) {
+    .dashNav {
+        padding: 3px 50px !important;
+    }
+
+    .dashNavLinks {
+        margin-left: -90px !important;
+    }
+}
+
+@media (max-width: 995px) {
+    .dashNav {
+        padding: 5px 15px !important;
+    }
+
+    .dashLogo {
+        margin-right: 0;
+    }
+
+    .dashNavLinks {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        padding: 10px 30px !important;
+        margin-left: -40px !important;
+    }
+
+    .dashNavLink.activeLink::after {
+        display: none;
+    }
+
+    /* .dashNavRight {
+        padding: 10px 0;
+        border-top: 1px solid #EBEAE5;
+        margin-top: 5px;
+    } */
+
+    .dashNavRight {
+        padding: 5px 0;
+        border-top: 1px solid #EBEAE5;
+        margin-top: 5px;
+    }
+
+    .navBell {
+        display: none;
+    }
+
+    .navBell2 {
+        display: flex !important;
+        align-items: center;
+        margin-left: auto;
+        margin-top: 10px;
+        margin-right: 20px;
+    }
+
+    .dropdown-menu {
+        position: static !important;
+    }
+    .mobileAvatar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 0;
+    margin-top: -2px;
+}
+.logoutLink {
+    margin-bottom: -15px;
+}
+}
+
+@media (max-width: 420px) {
+    .navBell2 {
+        margin-right: 15px !important;
+    }
+
+    .navBell2 .material-symbols-outlined {
+        font-size: 30px !important;
+    }
+}
+
+@media (max-width: 380px) {
+    .dashNav {
+        padding: 5px 0px !important;
+    }
+}
+
+@media (max-width: 322px) {
+    .dashLogo img {
+        width: 100px;
+    }
+}
