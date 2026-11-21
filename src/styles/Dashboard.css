@@ -1,0 +1,367 @@
+.appLayout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.dashboard {
+  background-color: #f8f8f8;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.dashLayout {
+  width: 87%;
+  min-height: 93vh;
+  padding: 0;
+  position: static;
+  margin: 0 auto;
+}
+
+.greet {
+  display: flex;
+  margin-top: 25px;
+  justify-content: space-between;
+}
+
+.dashLeft {
+  padding: 0;
+  margin: 0;
+}
+
+.dashLeft h1 {
+  padding: 3px 0;
+  margin: 0;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.leftPText {
+  padding: 0;
+  margin: 0;
+  color: #7f7f7f;
+  font-weight: 500;
+}
+
+.greetUser {
+  font-size: 15px;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+}
+
+.dashRight {
+  padding: 5px 10px;
+  margin: 0;
+  background-color: #daede7;
+  width: 380px;
+  height: fit-content;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  top: 27px;
+}
+
+.rightIcon img {
+  width: 50px;
+  height: auto;
+}
+
+.greenText {
+  font-weight: 600;
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.pText {
+  font-size: 12px;
+  font-weight: 500;
+  color: #7f7f7f;
+  padding: 0;
+  margin: 0;
+}
+
+.activityGrid {
+  width: 100%;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 18px;
+}
+
+.actGrid {
+  border: 1px solid #d1e2dd;
+  width: 100%;
+  height: 200px;
+  background-color: #FDFBFC;
+  border-radius: 10px;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.actGrid h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.actGrid h5 {
+  margin: 0;
+  padding: 0;
+  margin-top: 5px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.activityIcon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #D8EDE5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0F5948;
+}
+
+.viewAct {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 0;
+  padding: 0;
+  color: #0F5948;
+  cursor: pointer;
+}
+
+.viewAct span {
+  font-size: 24px;
+}
+
+.quickactions {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.quickactions h5 {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+}
+
+.actionsGrid {
+  width: 100%;
+  height: auto;
+  margin-top: 6px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 18px;
+}
+
+.actionGrid {
+  border: 1px solid #d1e2dd;
+  background-color: #FDFBFC;
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  min-height: 80px;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.actionArrow {
+  display: flex;
+  align-items: flex-end;
+  align-self: flex-end;
+  padding-bottom: 5px;
+}
+
+.actionArrow span {
+  font-size: 25px;
+  color: #0f6E56;
+}
+
+.actionGridContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.actionGridHeader {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.actionGridText {
+  margin-top: 10px;
+}
+
+.actionText {
+  font-size: 12px;
+  width: 100%;
+}
+
+.outterCircle {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #d1e2dd;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.actionGridIcon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #0f6E56;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.actionGridIcons {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #D8EDE5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.childE {
+  background-color: #F0F6F4;
+}
+
+.yourEscrows {
+  margin-top: 20px;
+  gap: 0px;
+  margin-bottom: 20px;
+}
+
+.escrowLeft h5 {
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
+.escrowRight {
+  margin-top: 3px;
+}
+
+.dashRightBottom {
+  display: none;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1026px) {
+  .activityGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 991px) and (min-width: 601px) {
+  .dashRight {
+    width: 100%;
+    top: 0;
+    position: static;
+  }
+
+  .dashLayout {
+    width: 90%;
+  }
+
+  .greet {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .escrowTabsWrapper {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+@media (max-width: 601px) {
+  .greet {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .dashRight {
+    width: 100%;
+    top: 0;
+    display: none;
+  }
+
+  .activityGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .actionsGrid {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .quickactions {
+    height: auto;
+  }
+
+  .actionGrid {
+    height: auto;
+  }
+
+  .dashRightBottom {
+    display: flex;
+    margin-top: 10px;
+  }
+
+  .actionGridHeader {
+    font-size: 14px;
+  }
+
+  .actionText {
+    font-size: 11px;
+  }
+
+  .outterCircle {
+    width: 45px;
+    height: 45px;
+  }
+
+  .actionGridIcon {
+    width: 38px;
+    height: 38px;
+  }
+
+  .actionGridIcons {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 420px) {
+  .escrowTabsWrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
