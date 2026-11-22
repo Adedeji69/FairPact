@@ -236,6 +236,18 @@
 .logoutLink {
     margin-bottom: -15px;
 }
+
+.navBell2 .material-symbols-outlined {
+    font-size: 25px !important;
+    color: #333;
+}
+.navBell2 .bellBadge{
+    width: 22px;
+    height: 22px;
+    font-size: 14px;
+    top: -9px !important;
+    right: -8px;
+}
 }
 
 @media (max-width: 420px) {
@@ -244,8 +256,14 @@
     }
 
     .navBell2 .material-symbols-outlined {
-        font-size: 30px !important;
+        font-size: 25px !important;
     }
+
+.navBell2 .bellBadge{
+    width: 18px;
+    height: 18px;
+    font-size: 9px;
+}
 }
 
 @media (max-width: 380px) {

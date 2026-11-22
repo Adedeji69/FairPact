@@ -1,6 +1,6 @@
 import React from "react";
 import DashboardNav from "../components/DashboardNav";
-import "../styles/Dashboard.css";
+import "../styles/UserDashboard.css";
 import shield from "../assets/hero-content-shield.png";
 import YourEscrowTab from "../components/EscrowTabs";
 
@@ -18,11 +18,7 @@ const UserDashboard = () => {
           <div className="greet">
             <div className="dashLeft">
               <p className="greetUser">
-                {time < 12
-                  ? "Good Morning,"
-                  : time < 17
-                    ? "Good Afternoon,"
-                    : "Good Evening,"}
+                {time < 12 ? "Good Morning," : time < 17 ? "Good Afternoon," : "Good Evening,"}
               </p>
               <h1>User 👋</h1>
               <p className="leftPText">
