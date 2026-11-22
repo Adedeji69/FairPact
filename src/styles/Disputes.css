@@ -1,5 +1,6 @@
 .disputeMain {
-    background-color: #f8f8f8;
+    /* background-color: #f8f8f8; */
+    background-color: #EFEFED;
     flex: 1;
     display: flex;
     justify-content: center;
