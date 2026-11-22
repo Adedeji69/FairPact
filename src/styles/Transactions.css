@@ -1,0 +1,174 @@
+.transMain {
+    background-color: #f8f8f8;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.transLayout {
+    width: 87%;
+    min-height: 93vh;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.transHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 25px;
+}
+
+.transHeaderLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.backToDash {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #0F5948;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
+.backToDash .material-symbols-outlined {
+    font-size: 18px;
+}
+
+.backToDash:hover {
+    transform: translateX(-2px);
+}
+
+.transHeaderLeft h1 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+.transSubText {
+    color: #7f7f7f;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+.transSecureBanner {
+    background-color: #daede7;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    width: 350px;
+}
+
+.transSecureIcon img {
+    width: 40px;
+    height: auto;
+}
+
+.transSecureTitle {
+    font-size: 13px;
+    font-weight: 600;
+    color: #296558;
+    margin: 0;
+    padding: 0;
+}
+
+.transSecureDesc {
+    font-size: 11px;
+    color: #7f7f7f;
+    margin: 0;
+    padding: 0;
+}
+
+.transStatsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 18px;
+    margin-top: 25px;
+}
+
+.transStat {
+    background-color: #FDFBFC;
+    border: 1px solid #d1e2dd;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.transStatIcon {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #D8EDE5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0F5948;
+    flex-shrink: 0;
+}
+
+.transStatIcon .material-symbols-outlined {
+    font-size: 26px;
+}
+
+.transStatLabel {
+    font-size: 13px;
+    color: #7f7f7f;
+    margin: 0;
+    padding: 0;
+}
+
+.transStatValue {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 3px 0;
+    padding: 0;
+}
+
+.transStatSub {
+    font-size: 12px;
+    color: #7f7f7f;
+    margin: 0;
+    padding: 0;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 991px) {
+    .transHeader {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .transSecureBanner {
+        width: 100%;
+    }
+}
+
+@media (max-width: 601px) {
+    .transStatsGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .transHeaderLeft h1 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 400px) {
+    .transStatsGrid {
+        grid-template-columns: 1fr;
+    }
+}
