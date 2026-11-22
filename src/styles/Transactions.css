@@ -166,6 +166,10 @@
     .transHeaderLeft h1 {
         font-size: 24px;
     }
+    .transStatValue {
+    font-size: 20px;
+   
+}
 }
 
 @media (max-width: 400px) {
