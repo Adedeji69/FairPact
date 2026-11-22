@@ -1,0 +1,194 @@
+.escrowMain {
+    background-color: #f8f8f8;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.escrowLayout {
+    width: 87%;
+    min-height: 93vh;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.escrowHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 25px;
+}
+
+.escrowHeaderLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.backToDash {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #0F5948;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
+.backToDash .material-symbols-outlined {
+    font-size: 18px;
+}
+
+.backToDash:hover {
+    transform: translateX(-2px);
+}
+
+.escrowHeaderLeft h1 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+.escrowSubText {
+    color: #7f7f7f;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+.newEscrowBtn {
+    background-color: #0F6E56;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 12px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.newEscrowBtn:hover {
+    transform: translateY(-1px);
+}
+
+.escrowBanner {
+    background-color: #daede7;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 16px;
+    width: 350px;
+    height: fit-content;
+    position: relative;
+    top: 40px;
+}
+
+.escrowBannerIcon img {
+    width: 40px;
+    height: auto;
+}
+
+.escrowBannerTitle {
+    font-size: 13px;
+    font-weight: 600;
+    color: #296558;
+    margin: 0;
+    padding: 0;
+}
+
+.escrowBannerDesc {
+    font-size: 11px;
+    color: #7f7f7f;
+    margin: 0;
+    padding: 0;
+}
+
+.escrowStatsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 18px;
+    margin-top: 30px;
+}
+
+.escrowStat {
+    background-color: #FDFBFC;
+    border: 1px solid #d1e2dd;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.escrowStatIcon {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #D8EDE5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0F5948;
+    flex-shrink: 0;
+}
+
+.escrowStatIcon .material-symbols-outlined {
+    font-size: 26px;
+}
+
+.escrowStatLabel {
+    font-size: 13px;
+    color: #7f7f7f;
+    margin: 0;
+    padding: 0;
+}
+
+.escrowStatValue {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 3px 0;
+    padding: 0;
+}
+
+.escrowStatSub {
+    font-size: 12px;
+    color: #7f7f7f;
+    margin: 0;
+    padding: 0;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 991px) {
+    .escrowHeader {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .escrowBanner {
+        width: 100%;
+        top: 0;
+    }
+}
+
+@media (max-width: 601px) {
+    .escrowStatsGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .escrowHeaderLeft h1 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 400px) {
+    .escrowStatsGrid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -24,7 +24,7 @@ const UserDashboard = () => {
                     ? "Good Afternoon,"
                     : "Good Evening,"}
               </p>
-              <h1>Olawuyi Isaiah 👋</h1>
+              <h1>User 👋</h1>
               <p className="leftPText">
                 Manage your escrow transactions and activities.
               </p>
