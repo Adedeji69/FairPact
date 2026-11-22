@@ -5,7 +5,8 @@
 }
 
 .dashboard {
-  background-color: #f8f8f8;
+  /* background-color: #f8f8f8; */
+  background-color: #EFEFED;
   flex: 1;
   display: flex;
   justify-content: center;
@@ -356,6 +357,14 @@
     width: 45px;
     height: 45px;
   }
+
+  .actGrid h1 {
+  font-size: 22px;
+}
+
+.actGrid h5 {
+  font-size: 15px;
+}
 }
 
 @media (max-width: 420px) {
