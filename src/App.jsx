@@ -11,6 +11,7 @@ import Escrows from './pages/Escrows'
 import Transactions from './pages/Transactions'
 import Disputes from './pages/Disputes'
 import DeliverySignin from './pages/DeliverySignin'
+import PartnerDashboard from './pages/PartnerDashboard'
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <Route path='/user/escrows' element={<Escrows />} />
       <Route path='/user/transactions' element={<Transactions />} />
       <Route path='/user/disputes' element={<Disputes />} />
+      <Route path='/partner/dashboard' element={<PartnerDashboard/>}/>
     </Routes>
   )
 }

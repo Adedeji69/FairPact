@@ -1,0 +1,289 @@
+.partnerMain {
+    /* background-color: #f8f8f8; */
+    background-color: #EFEFED;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.partnerLayout {
+    width: 87%;
+    min-height: 93vh;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.partnerGreet {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.partnerGreetLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.partnerBadge {
+    display: inline-block;
+    background-color: #D8EDE5;
+    color: #0F5948;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 20px;
+    width: fit-content;
+}
+
+.partnerGreetLeft h1 {
+    font-size: 26px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+.partnerGreetSub {
+    font-size: 14px;
+    color: #7f7f7f;
+    margin: 0;
+    padding: 0;
+}
+
+.partnerBanner {
+    background-color: #daede7;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 16px;
+    width: 300px;
+    height: fit-content;
+    position: relative;
+    top: 10px;
+}
+
+.partnerBannerIcon img {
+    width: 40px;
+    height: auto;
+}
+
+.partnerBannerTitle {
+    font-size: 13px;
+    font-weight: 600;
+    color: #296558;
+    margin: 0;
+    padding: 0;
+}
+
+.partnerBannerDesc {
+    font-size: 11px;
+    color: #7f7f7f;
+    margin: 0;
+    padding: 0;
+}
+
+.partnerStatsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 18px;
+    margin-bottom: 20px;
+}
+
+.partnerStat {
+    background-color: #FDFBFC;
+    border: 1px solid #d1e2dd;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.partnerStatIcon {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #D8EDE5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0F5948;
+    flex-shrink: 0;
+}
+
+.partnerStatIcon .material-symbols-outlined {
+    font-size: 26px;
+}
+
+.partnerStatLabel {
+    font-size: 13px;
+    color: #7f7f7f;
+    margin: 0;
+    padding: 0;
+}
+
+.partnerStatValue {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 3px 0;
+    padding: 0;
+}
+
+.partnerStatSub {
+    font-size: 12px;
+    color: #7f7f7f;
+    margin: 0;
+    padding: 0;
+}
+
+.partnerTwoCol {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 18px;
+}
+
+.partnerSection {
+    background-color: #FDFBFC;
+    border: 1px solid #d1e2dd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.partnerSectionHead {
+    padding: 14px 16px;
+    border-bottom: 1px solid #d1e2dd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.partnerSectionTitle {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+.partnerSeeAll {
+    font-size: 12px;
+    color: #0F5948;
+    cursor: pointer;
+}
+
+.partnerEmptyState {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    color: #7f7f7f;
+    gap: 10px;
+}
+
+.partnerEmptyState .material-symbols-outlined {
+    font-size: 40px;
+    color: #d1e2dd;
+}
+
+.partnerEmptyState p {
+    font-size: 13px;
+    margin: 0;
+}
+
+.partnerActionList {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px;
+}
+
+.partnerActionItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    border: 1px solid #d1e2dd;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.partnerActionItem:hover {
+    background-color: #f0f7f4;
+}
+
+.partnerActionIcon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #D8EDE5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0F5948;
+    flex-shrink: 0;
+}
+
+.partnerActionIcon .material-symbols-outlined {
+    font-size: 20px;
+}
+
+.partnerActionTitle {
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.partnerActionSub {
+    font-size: 11px;
+    color: #7f7f7f;
+    margin: 0;
+    padding: 0;
+}
+
+.partnerActionArrow {
+    margin-left: auto;
+    color: #0F5948;
+    font-size: 22px !important;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 991px) {
+    .partnerGreet {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .partnerBanner {
+        width: 100%;
+        top: 0;
+    }
+
+    .partnerTwoCol {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 601px) {
+    .partnerStatsGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .partnerGreetLeft h1 {
+        font-size: 20px;
+    }
+    .partnerStatValue{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .partnerStatsGrid {
+        grid-template-columns: 1fr;
+    }
+}
