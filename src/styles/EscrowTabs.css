@@ -88,3 +88,13 @@
         text-align: center;
     }
 }
+@media (max-width: 420px) {
+    .escrowTabsTop {
+        
+       margin: auto;
+    }
+
+    .escrowTitle {
+        text-align: center;
+    }
+}
