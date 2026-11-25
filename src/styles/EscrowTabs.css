@@ -1,7 +1,7 @@
 .escrowTabsWrapper {
     display: flex;
-    align-items: center;
-    gap: 10px;
+    flex-direction: column;
+    width: 100%;
 }
 
 .escrowTitle {
@@ -41,3 +41,50 @@
     color: white !important;
 }
 
+.escrowTabsTop {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.escrowTabContent {
+    margin-top: 10px;
+    border: 1px solid #d1e2dd;
+    border-radius: 10px;
+    background-color: #FDFBFC;
+    width: 100%;
+}
+
+.escrowTabEmpty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+    gap: 8px;
+    text-align: center;
+}
+
+.escrowTabEmpty .material-symbols-outlined {
+    font-size: 36px;
+    color: #d1e2dd;
+}
+
+.escrowTabEmpty p {
+    font-size: 13px;
+    color: #7f7f7f;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 432depx) {
+    .escrowTabsTop {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .escrowTitle {
+        text-align: center;
+    }
+}

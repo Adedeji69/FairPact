@@ -12,6 +12,8 @@ import Transactions from './pages/Transactions'
 import Disputes from './pages/Disputes'
 import DeliverySignin from './pages/DeliverySignin'
 import PartnerDashboard from './pages/PartnerDashboard'
+import PartnerDeliveries from './pages/PartnerDeliveries'
+import PartnerEarnings from './pages/PartnerEarnings'
 
 function App() {
   return (
@@ -28,6 +30,8 @@ function App() {
       <Route path='/user/transactions' element={<Transactions />} />
       <Route path='/user/disputes' element={<Disputes />} />
       <Route path='/partner/dashboard' element={<PartnerDashboard/>}/>
+      <Route path='/partner/deliveries' element={<PartnerDeliveries/>}/>
+      <Route path='/partner/earnings' element={<PartnerEarnings />} />
     </Routes>
   )
 }

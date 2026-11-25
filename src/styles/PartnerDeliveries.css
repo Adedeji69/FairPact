@@ -1,0 +1,181 @@
+.partnerDelMain {
+    background-color: #EFEFED;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.partnerDelLayout {
+    width: 87%;
+    min-height: 93vh;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.partnerDelHeader {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.partnerDelHeader h1 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+.partnerDelSubText {
+    color: #7f7f7f;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+.partnerDelStatsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 18px;
+    margin-bottom: 20px;
+}
+
+.partnerDelStat {
+    background-color: #FDFBFC;
+    border: 1px solid #d1e2dd;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.partnerDelStatIcon {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #D8EDE5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0F5948;
+    flex-shrink: 0;
+}
+
+.partnerDelStatIcon .material-symbols-outlined {
+    font-size: 26px;
+}
+
+.partnerDelStatLabel {
+    font-size: 13px;
+    color: #7f7f7f;
+    margin: 0;
+    padding: 0;
+}
+
+.partnerDelStatValue {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 3px 0;
+    padding: 0;
+}
+
+.partnerDelStatSub {
+    font-size: 12px;
+    color: #7f7f7f;
+    margin: 0;
+    padding: 0;
+}
+
+.partnerDelSection {
+    background-color: #FDFBFC;
+    border: 1px solid #d1e2dd;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.partnerDelSectionHead {
+    padding: 12px 16px;
+    border-bottom: 1px solid #d1e2dd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.partnerDelTabs {
+    display: flex;
+    gap: 6px;
+}
+
+.partnerDelTab {
+    font-size: 13px;
+    padding: 6px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #7f7f7f;
+    font-weight: 500;
+}
+
+.partnerDelTab.activeDelTab {
+    background-color: #0F5948;
+    color: white;
+}
+
+.partnerDelContent {
+    padding: 10px;
+}
+
+.partnerDelEmpty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    gap: 8px;
+    text-align: center;
+}
+
+.partnerDelEmpty .material-symbols-outlined {
+    font-size: 48px;
+    color: #d1e2dd;
+}
+
+.partnerDelEmpty h5 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.partnerDelEmpty p {
+    font-size: 13px;
+    color: #7f7f7f;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+@media (max-width: 601px) {
+    .partnerDelStatsGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .partnerDelHeader h1 {
+        font-size: 24px;
+    }
+
+    .partnerDelStatValue {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .partnerDelStatsGrid {
+        grid-template-columns: 1fr;
+    }
+}
