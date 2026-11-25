@@ -14,9 +14,9 @@ const PartnerNav = () => {
 
   const navItems = [
     { name: "Dashboard", path: "/partner/dashboard" },
-    { name: "Deliveries", path: "/partner/Deliveries" },
-    { name: "Earnings", path: "/partner/Earnings" },
-    { name: "Profile", path: "/partner/Profile" },
+    { name: "Deliveries", path: "/partner/deliveries" },
+    { name: "Earnings", path: "/partner/earnings" },
+    { name: "Profile", path: "/partner/profile" },
   ];
 
   return (
