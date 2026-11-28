@@ -1,0 +1,75 @@
+
+.errorPage {
+  width: 100%;
+  min-height: 100vh;
+  background: #FBFBF9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+.errorContent {
+  width: 100%;
+  text-align: center;
+}
+
+.errorContent h1 {
+  font-size: 76px;
+  font-weight: 800;
+  color: #0F6E56;
+  line-height: 1;
+  margin: 0 0 12px;
+}
+
+.errorContent h2 {
+  font-size: 23px;
+  font-weight: 600;
+  color: #1C1F26;
+  margin: 0 0 5px;
+}
+
+
+
+.errorSubText {
+  font-size: 14px;
+  color: #5F5E5A;
+  margin: 0 0 25px;
+  font-weight: 400;
+}
+
+.errorContent button {
+  background: #0F6E56;
+  color: #FFFFFF;
+  border: none;
+  padding: 11px 19px;
+  font-size: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.3s ease;
+}
+
+.errorContent button:hover {
+  opacity: 0.7;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 600px) {
+  .errorContent h1 {
+    font-size: 65px;
+  }
+
+  .errorContent h2 {
+    font-size: 19px;
+  }
+
+  .errorMainText {
+    font-size: 15px;
+  }
+
+  .errorSubText {
+    font-size: 12px;
+  }
+}
