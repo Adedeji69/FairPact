@@ -29,7 +29,7 @@ const PartnerNav = () => {
 
         <div className="navBell2">
           <span className="material-symbols-outlined">notifications</span>
-          <span className="bellBadge">3</span>
+          <span className="bellBadge">0</span>
         </div>
 
         <Navbar.Toggle aria-controls="dashNavScroll" />
@@ -54,14 +54,14 @@ const PartnerNav = () => {
           <div className="dashNavRight">
             <div className="navBell">
               <span className="material-symbols-outlined">notifications</span>
-              <span className="bellBadge">3</span>
+              <span className="bellBadge">0</span>
             </div>
 
             <Dropdown align="end" className="d-none d-lg-block">
               <Dropdown.Toggle as="div" style={{ cursor: "pointer" }}>
                 <div className="avatarWrapper">
                   <img src={userAvatar} alt="user" className="avatarImg" />
-                  <span className="avatarName">User</span>
+                  <span className="avatarName">Partner</span>
                   <span className="material-symbols-outlined avatarChevron">
                     expand_more
                   </span>
@@ -69,8 +69,8 @@ const PartnerNav = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item href="#">Profile</Dropdown.Item>
-                <Dropdown.Item href="#">Settings</Dropdown.Item>
+                <Dropdown.Item href="/partner/profile">Profile</Dropdown.Item>
+                <Dropdown.Item href="/profile/settings">Settings</Dropdown.Item>
                 <Dropdown.Divider />
                 <Dropdown.Item href="#">Log Out</Dropdown.Item>
               </Dropdown.Menu>
@@ -78,7 +78,7 @@ const PartnerNav = () => {
 
             <div className="mobileAvatar d-lg-none">
               <img src={userAvatar} alt="user" className="avatarImg" />
-              <span className="avatarName">User</span>
+              <span className="avatarName">Partner</span>
             </div>
           </div>
         </Navbar.Collapse>

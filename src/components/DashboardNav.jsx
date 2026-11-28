@@ -69,8 +69,8 @@ const DashboardNav = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item href="#">Profile</Dropdown.Item>
-                <Dropdown.Item href="#">Settings</Dropdown.Item>
+                <Dropdown.Item href="/user/admin">Profile</Dropdown.Item>
+                <Dropdown.Item href="/user/settings">Settings</Dropdown.Item>
                 <Dropdown.Divider />
                 <Dropdown.Item href="#">Log Out</Dropdown.Item>
               </Dropdown.Menu>
